@@ -22,13 +22,13 @@ https://masqueradenyc.com/buy-tickets/
 ## Requirements
 
 - Python 3.x
-- Google Chrome browser installed
-- ChromeDriver (matching your Chrome version)
+- BeautifulSoup4
 
 ### Install dependencies
 
 ```bash
-pip install selenium
+pip install pandas
+pip install beautifulSoup4
 ```
 
 ---
@@ -66,7 +66,7 @@ ALL SHOWS (69 total):
 
 ## How It Works
 
-1. Launches a headless (invisible) Chrome browser
+1. Requests to access the url
 2. Visits the Masquerade NYC ticket page
 3. Waits for the calendar to fully load
 4. Scrapes all Limited and Available dates from the current month
@@ -78,14 +78,8 @@ ALL SHOWS (69 total):
 
 ## Tools Used
 
-- [Selenium](https://www.selenium.dev/) — browser automation
-- `datetime` — date parsing and formatting
-- `time` — controlling wait times between page loads
+- Pandas
+- BeautifulSoup4
 
----
 
-## Notes
 
-- The scraper runs in headless mode — Chrome opens invisibly in the background
-- A 1.5 second delay is added between months to allow the calendar to render
-- The next month button is clicked via JavaScript to bypass header overlap issues
