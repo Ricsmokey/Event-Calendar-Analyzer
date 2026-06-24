@@ -1,6 +1,6 @@
 # The Calendar Navigator 
 
-A Python web scraper that navigates through an interactive calendar to collect all available showtimes for **Masquerade NYC** — an immersive theater experience.
+A Python web scraper that navigates through an interactive calendar to collect all available showtimes for **Masquerade NYC** — a theater experience. It automatically collects all available and limited show dates and exports a CSV dataset.
 
 ---
 
@@ -9,7 +9,7 @@ A Python web scraper that navigates through an interactive calendar to collect a
 - Navigates through 6 months of an interactive calendar automatically
 - Collects all show dates with **Limited** availability
 - Collects all show dates with **Good** availability
-- Prints a clean, deduplicated, and sorted final list of all shows
+- Prints a clean and sorted final list of all shows
 
 ---
 
@@ -19,11 +19,20 @@ https://masqueradenyc.com/buy-tickets/
 
 ---
 
-## Requirements
+## Tech Stack
 
-- Python 3.x
+- Python 
 - BeautifulSoup4
+- Pandas
 
+## Project Structure
+```
+Event-Calendar-Analyzer/
+│
+├── Event scraper.py
+├── the_events_scraped.csv
+└── README.md
+```
 ### Install dependencies
 
 ```bash
@@ -36,7 +45,10 @@ pip install beautifulSoup4
 ## How to Run
 
 ```bash
-python "The Calendar Navigaor.py"
+git clone https://github.com/Ricsmokey/Event-Calendar-Analyzer.git
+cd Event-Calendar-Analyzer
+pip install beautifulsoup4 pandas
+python "Event scraper.py"
 ```
 
 ---
@@ -72,14 +84,11 @@ ALL SHOWS (69 total):
 4. Scrapes all Limited and Available dates from the current month
 5. Clicks the "Next" button to move to the following month
 6. Repeats steps 4–5 for up to 6 months
-7. Deduplicates and prints the final results
+7. Duplicates and prints the final results
 
 ---
 
-## Tools Used
-
-- Pandas
-- BeautifulSoup4
-
+## Author
+Akorede Kareem — github.com/Ricsmokey
 
 
