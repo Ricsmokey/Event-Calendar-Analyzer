@@ -89,6 +89,7 @@ ALL SHOWS (69 total):
 ---
 
 ## Author
-Akorede Kareem — github.com/Ricsmokey
+
+**Akorede Kareem** — [github.com/Ricsmokey](https://github.com/Ricsmokey)
 
 
